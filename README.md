@@ -1,6 +1,6 @@
 # CI PHP Lint
 
-[![CircleCI](https://circleci.com/gh/bangpound/ci-php-lint.svg?style=svg&circle-token=254a04057054e9674d8968f090fdac9930cf72b6)](https://circleci.com/gh/bangpound/ci-php-lint)
+[![CircleCI](https://circleci.com/gh/bangpound/ci-php-lint.svg?style=svg&circle-token=a8e49af1ac3c1f1712e32328dc02fdffabea8ebe)](https://circleci.com/gh/bangpound/ci-php-lint)
 
 Runs the PHP linter on files in a changeset.
 
