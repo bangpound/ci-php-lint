@@ -17,7 +17,7 @@ test:
 # Aggregate into a single script
 .PHONY: dist
 dist:
-	mkdir dist
+	if [ -d "dist"]; then mkdir dist; fi
 	cd build && $(MAKE)
 	cat bin/circleci-php-lint | sed -e '/### Imports/,$$d' > dist/circleci-php-lint
 	. src/circleci_rest.sh
@@ -31,3 +31,4 @@ dist:
 	declare -f url_to_hash >> dist/circleci-php-lint
 	declare -f lint_php >> dist/circleci-php-lint
 	cat bin/circleci-php-lint | sed -n -e '/### Runtime/,$$p' >> dist/circleci-php-lint
+	chmod +x dist/circleci-php-lint
