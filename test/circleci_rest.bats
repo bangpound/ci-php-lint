@@ -12,7 +12,7 @@ setup() {
     vcs_type=github
     username=bangpound
     project=ci-php-lint
-    build_num=3
+    build_num=2
 }
 
 @test "CircleCI REST / get base and head for a pull request" {
@@ -24,5 +24,5 @@ setup() {
         $build_num
 
     [ $status -eq 0 ]
-    [ "$output" == "8459a2ba732cfa0e0aceae76b49b08504e05485e b03f6ce53246367c943894a68ef4d0da165b6405" ]
+    [ "$output" == "59e52704d0360daf624076b075dbd5482fc291d7" ]
 }
