@@ -1,0 +1,10 @@
+machine:
+  post:
+    - sudo add-apt-repository ppa:duggan/bats -y
+    - sudo apt-get -q update
+    - sudo apt-get -q install bats jq
+    - ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+test:
+  override:
+    - bats test
