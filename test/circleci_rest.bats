@@ -11,8 +11,8 @@ setup() {
     fi
     vcs_type=github
     username=bangpound
-    project=circleci-php-lint
-    build_num=29
+    project=ci-php-lint
+    build_num=3
 }
 
 @test "CircleCI REST / get base and head for a pull request" {
