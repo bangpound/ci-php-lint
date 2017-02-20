@@ -12,15 +12,15 @@ Run `make` and copy the product `dist/circleci-php-lint` into your project.
 Usage
 -----
 
-bin/circleci-php-lint [options]
+bin/circleci-php-lint [options]  
 
-  -C           [arg] Git repository directory.
-  -i --include [arg] Grep include pattern. Required. Default='\.php$'
-  -x --exclude [arg] Grep exclude pattern.
-  -v                 Enable verbose mode, print script as it is executed
-  -d --debug         Enables debug mode
-  -h --help          This page
-  -n --no-color      Disable color output
+  -C           [arg] Git repository directory.  
+  -i --include [arg] Grep include pattern. Required. Default='\.php$'  
+  -x --exclude [arg] Grep exclude pattern.  
+  -v                 Enable verbose mode, print script as it is executed  
+  -d --debug         Enables debug mode  
+  -h --help          This page  
+  -n --no-color      Disable color output  
 
 
 
