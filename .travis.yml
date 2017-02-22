@@ -1,7 +1,7 @@
 before_install:
   - sudo add-apt-repository ppa:duggan/bats -y
   - sudo apt-get -q update
-  - sudo apt-get -q install bats jq
+  - sudo apt-get -q install bats jq php5-cli
   - ssh-keyscan github.com >> ~/.ssh/known_hosts
 
 script: bats test
