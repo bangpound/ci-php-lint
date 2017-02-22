@@ -1,5 +1,11 @@
 #!/usr/bin/env bats
 
+setup() {
+    github_user=github
+    github_project=hub
+    github_pull_request_id=53
+}
+
 @test "CircleCI REST / fail without CircleCI Token" {
     run src/circleci_rest.sh
     [ $status -eq 1 ]
@@ -29,5 +35,5 @@
         $github_pull_request_id
 
     [ $status -eq 22 ]
-    [[ "$output" =~ "401 Unauthorized" ]]
+    [[ "$output" =~ "401" ]]
 }
