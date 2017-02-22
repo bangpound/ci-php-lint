@@ -10,6 +10,6 @@
 @test "Lint PHP / bad php" {
     run src/lint_php.sh <<< "<?php badphp"
     [ $status -eq 255 ]
-    [ "${lines[0]}" = "Parse error: syntax error, unexpected end of file in - on line 2" ]
-    [ "${lines[1]}" = "Errors parsing -" ]
+    [[ "$output" == *"Parse error: syntax error, unexpected end of file in - on line 2"* ]]
+    [[ "$output" == *"Errors parsing -"* ]]
 }
