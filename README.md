@@ -12,7 +12,7 @@ Run `make` and copy the product `dist/circleci-php-lint` into your project.
 Usage
 -----
 
-bin/circleci-php-lint [options]  
+circleci-php-lint [options]
 
   -C           [arg] Git repository directory.  
   -i --include [arg] Grep include pattern. Required. Default='\.php$'  
@@ -31,25 +31,25 @@ Lint changed php files for the current build in the current working
 directory.
 
 ```
-bin/circleci-php-lint
+circleci-php-lint
 ```
 
 Lint changed php files in the `src` directory:
 
 ```
-bin/circleci-php-lint -i ^src\/.+\.php$
+circleci-php-lint -i ^src\/.+\.php$
 ```
 
 Lint changed php files except in the test directory:
 
 ```
-bin/circleci-php-lint -x ^test
+circleci-php-lint -x ^test
 ```
 
 Use a different PHP than the default:
 
 ```
-PHP_BIN=~/.php/5.3/bin/php bin/circleci-php-lint
+PHP_BIN=~/.php/5.3/bin/php circleci-php-lint
 ```
 
 ## Terms
