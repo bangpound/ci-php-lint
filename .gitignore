@@ -2,3 +2,4 @@
 !/build/Makefile
 /tmp
 /.env
+/dist
